@@ -1,5 +1,4 @@
 import java.util.Comparator;
-import java.util.Collections;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,11 +22,6 @@ public class App {
             public int compare(ConstructorForPerson o1, ConstructorForPerson o2) {
                 return o1.getSurname().compareTo(o2.getSurname());
             }
-
         });
-        //System.out.println(ListOfPeople);
-        //Collections.sort(new ArrayList<>());
-        //System.out.println(ListOfPeople);
-
     }
 }
