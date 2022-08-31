@@ -15,13 +15,8 @@ public class App {
         System.out.println(ListOfPeople);
         ListOfPeople.sort(Comparator.comparing(ConstructorForPerson::getName));
         System.out.println(ListOfPeople);
-        ListOfPeople.sort((o1, o2) -> o1.getSurname().compareTo(o2.getSurname()));
+        ListOfPeople.sort(Comparator.comparing(ConstructorForPerson::getSurname));
         System.out.println(ListOfPeople);
-        ListOfPeople.sort(new Comparator<ConstructorForPerson>() {
-            @Override
-            public int compare(ConstructorForPerson o1, ConstructorForPerson o2) {
-                return o1.getSurname().compareTo(o2.getSurname());
-            }
-        });
+        ListOfPeople.sort(Comparator.comparing(ConstructorForPerson::getSurname));
     }
 }
